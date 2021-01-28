@@ -1,0 +1,46 @@
+Looking at the app, I like the improvements with the calendar. 
+
+I¡¯d like to see the following changes:
+
+Change the word ¡°gravida¡± to ¡°number of pregnancies¡± (in the comments, change gravida to you)
+
+Medical history (these should all be background settings that doesn¡¯t come up after completed the first time unless someone goes into settings and change them)
+
+If someone select hypertension or diabetes, then prompt them to enter blood pressure and glucose in a separate area.
+
+Give option to set reminder for blood pressure daily and prompt patient to select the time of day for the reminder
+
+Give option to select home blood pressure cuff or doctor office
+
+Make spreadsheet to record blood pressure values overtime
+
+Give option to set reminder for glucose with preset for fasting at 7am,  breakfast at 9am, lunch at 1am and dinner 7am
+
+Make option for patient to adjust time
+
+Record glucose values on a spreadsheet that is accessible with a button, day of the week per roll, and fasting/breakfast/lunch/dinner on column.
+
+Also allow option to calculate averages, %highs and %lows
+
+Create section for labs
+Prompt patient to enter certain lab results: blood type (ABO, +/-), Hemoglobin, platelet, AST, ALT, Creatinine, Urine protein, first trimester down syndrome screen, second trimester down syndrome screen, NIPT, Amniocentesis, sickle cell screen, cystic fibrosis screen, HIV, syphilis (RPR) Hepatitis B/C, gestational diabetes screen, GBS result.
+Record date/time stamp for result.
+Prompt should come up based on current gestational age as long as lab values are missing
+
+Create summary report for labs
+On day of doctor visit prompt a list of questions and discussion items
+
+Create a question bank with commonly asked questions that patient can select to include in the discussions for the visit
+Some questions should be gestational age specific (I¡¯ll make a list later for this)
+
+Allow patient to add to the list of questions and concerns
+
+Other features to consider later:
+Nutrition and diet section maybe with links to meal plans
+Exercise and activity section with links to exercise regimens and tracker
+Social media section to connect with others using the app for motivation and support
+ 
+
+ 
+
+We should also meet at some point to talk about these changes. I think in person is better, to talk about the app design

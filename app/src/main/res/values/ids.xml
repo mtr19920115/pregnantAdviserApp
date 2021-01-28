@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="et_delivery" type="id"/>
+    <item name="db_vOrc" type="id"/>
+    <item name="cb_pr" type="id"/>
+    <item name="cb_ba" type="id"/>
+    <item name="cb_bb37" type="id"/>
+</resources>

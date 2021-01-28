@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SignUP">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textColor="@android:color/black"
+                android:text="user name"/>
+
+            <EditText
+                android:id="@+id/suet_userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Input user name"
+                android:textSize="15dp"
+                android:maxLength="25"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textColor="@android:color/black"
+                android:text="Password"/>
+
+
+
+            <EditText
+                android:id="@+id/suet_passWord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Input password"
+                android:textSize="15dp"
+                android:maxLength="25"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textColor="@android:color/black"
+                android:text="Repeat Password"/>
+
+            <EditText
+                android:id="@+id/suet_rpassWord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Repeat password"
+                android:textSize="15dp"
+                android:maxLength="25"
+                android:layout_marginBottom="5dp"/>
+
+
+            <TextView
+                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textColor="@android:color/black"
+                android:text="Zip code"/>
+
+            <EditText
+                android:id="@+id/suet_zipCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Input Zip code"
+                android:textSize="15dp"
+                android:inputType="number"
+                android:maxLength="5"
+                android:layout_marginBottom="5dp"/>
+
+
+
+            <TextView
+                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textColor="@android:color/black"
+                android:text="First name"/>
+
+            <EditText
+                android:id="@+id/suet_firstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Input first name"
+                android:textSize="15dp"
+                android:maxLength="25"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textColor="@android:color/black"
+                android:text="Last name"/>
+
+            <EditText
+                android:id="@+id/suet_lastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Input last name"
+                android:textSize="15dp"
+                android:maxLength="25"
+                android:layout_marginBottom="5dp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/subt_signUp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SignUp"/>
+
+                <Button
+                    android:id="@+id/subt_cancel"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

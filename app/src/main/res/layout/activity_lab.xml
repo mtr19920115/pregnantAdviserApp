@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LabActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:textSize="25dp"
+                android:textColor="@android:color/black"
+                android:text="Section for Labs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="choose the data you want to input:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Spinner
+                android:layout_marginBottom="5dp"
+                android:id="@+id/labSp_title"
+                android:spinnerMode="dropdown"
+                android:entries="@array/labTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_marginBottom="5dp"
+                android:id="@+id/labEt_values"
+                android:hint="input the data value here."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/labBt_back"
+                    android:text="Back"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:text="update"
+                    android:id="@+id/labBt_update"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/labLoadll_update"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Data Loading..."
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="15dp" />
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:indeterminate="true"
+                    android:progressDrawable="@drawable/progress_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/labll_update"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Data updating..."
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="15dp" />
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:indeterminate="true"
+                    android:id="@+id/pb_update"
+                    android:progressDrawable="@drawable/progress_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:textColor="@android:color/holo_red_light"
+                android:text="====================================================="
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/labTv_blDisplay"
+                android:text="blood type: "
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/labTv_HemDisplay"
+                android:text="Hemoglobin: "
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/labTv_PalDisplay"
+                android:text="platelet: "
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/labTv_ASTDisplay"
+                android:text="AST: "
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/labTv_ALTDisplay"
+                android:text="ALT: "
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/labTv_CreDisplay"
+                android:text="creatinine: "
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/labTv_UPDisplay"
+                android:text="Urine Protein: "
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/labTv_FTDisplay"
+                android:text="First Trimester: "
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/labTv_DSSDisplay"
+                android:text="Down Syndrome Screen: "
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/labTv_STDSSDisplay"
+                android:text="Second Trimester Down Syndrome Screen: "
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/labTv_NIPTDisplay"
+                android:text="NIPT: "
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/labTv_AmnDisplay"
+                android:text="amniocentesis: "
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/labTv_SCSDisplay"
+                android:text="Sickle Cell Screen: "
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/labTv_CFSDisplay"
+                android:text="Cystic Fibrosis Screen: "
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/labTv_HIVDisplay"
+                android:text="HIV: "
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/labTv_SypDisplay"
+                android:text="Syphilis: "
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/labTv_HBCDisplay"
+                android:text="hepatitis B/C: "
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/labTv_GDSDisplay"
+                android:text="Gestational Diabetes Screen: "
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/labTv_GBSDisplay"
+                android:text="GBS: "
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

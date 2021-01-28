@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Pregnancy Adviser App</string>
+    <string name="date">Date</string>
+    <string name="dd">Month/year of delivery</string>
+    <string name="diaType">Diabetes Type</string>
+    <string name="visitType">Visit Type:</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+</resources>

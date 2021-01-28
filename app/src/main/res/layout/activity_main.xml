@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.MainActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Gravida ID"
+                android:textColor="@android:color/black"
+                android:textSize="25dp" />
+
+
+            <TextView
+                android:id="@+id/tv_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Gravida First Name"
+                android:textColor="@android:color/black"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/tv_fn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Gravida Last Name"
+                android:textColor="@android:color/black"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/tv_ln"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textSize="15dp" />
+
+            <DatePicker
+                android:id="@+id/dp_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Data"
+                android:textSize="23dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/sp_date"
+                    android:layout_width="150dp"
+                    android:layout_height="23dp"
+                    android:layout_marginBottom="5dp"
+                    android:entries="@array/date"
+                    android:prompt="@string/date"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="The delivery Date: "
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/tv_EDDDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="----------------------------------------------------------------------------------------------"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="15dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Medical history"
+                android:textSize="23dp" />
+
+
+            <CheckBox
+                android:id="@+id/cb_hyper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Hypertension" />
+
+            <LinearLayout
+                android:id="@+id/ll_hy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/bt_hyUpdate"
+                    android:text="Update blood pressure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <!--
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="High blood pressure:" />
+
+                <EditText
+                    android:id="@+id/et_hp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:hint="High blood pressure"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Low blood pressure:" />
+
+                <EditText
+                    android:id="@+id/et_lowp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:hint="Low blood pressure"
+                    android:inputType="number" />
+                    -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="how long on BP medication(month):" />
+
+                <EditText
+                    android:id="@+id/et_longBPM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:hint="how long on BP medication"
+                    android:inputType="number"
+                    android:text="0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="how long on prepregnancy medication(month):" />
+
+                <EditText
+                    android:id="@+id/et_longPM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:hint="how long on prepregnancy medication"
+                    android:inputType="number"
+                    android:text="0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="how long on current medication(month):" />
+
+                <EditText
+                    android:id="@+id/et_longCM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:hint="how long on current medication"
+                    android:inputType="number"
+                    android:text="0" />
+
+
+            </LinearLayout>
+
+
+            <CheckBox
+                android:id="@+id/cb_diabetes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Diabetes" />
+
+            <LinearLayout
+                android:id="@+id/ll_dia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Diabetes type:" />
+
+
+                <Spinner
+                    android:id="@+id/sp_diaType"
+                    android:layout_width="150dp"
+                    android:layout_height="23dp"
+                    android:layout_marginBottom="5dp"
+                    android:entries="@array/diaType"
+                    android:prompt="@string/diaType"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="years being diabetic:" />
+
+                <EditText
+                    android:id="@+id/et_diaYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:hint="years being diabetic"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/bt_diaUpdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update Glucose level" />
+
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/et_mh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="search common conditions" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="----------------------------------------------------------------------------------------------"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Pregnancy history"
+                android:textSize="23dp" />
+
+            <TextView
+                android:text="Please enter your pregnancy number below"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <EditText
+                android:id="@+id/et_ph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="Number of pregnancy"
+                android:inputType="number"
+                android:maxLength="2" />
+
+            <CheckBox
+                android:id="@+id/et_phViewer"
+                android:text="View and edit pregnancy history"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:id="@+id/ll_ph"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="----------------------------------------------------------------------------------------------"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="BMI"
+                android:textSize="23dp" />
+
+            <EditText
+                android:id="@+id/et_height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="Height (inch)"
+                android:inputType="numberDecimal"
+                android:maxLength="4" />
+
+            <EditText
+                android:id="@+id/et_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="Weight (lb)"
+                android:inputType="numberDecimal"
+                android:maxLength="7" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Your BMI: " />
+
+                <TextView
+                    android:id="@+id/tv_bmi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="25dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="----------------------------------------------------------------------------------------------"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_updating"
+                android:orientation="vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Data updating..."
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="15dp" />
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:indeterminate="true"
+                    android:id="@+id/pb_update"
+                    android:progressDrawable="@drawable/progress_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt_submit"
+                    android:layout_width="125dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Submit Data" />
+
+                <Button
+                    android:id="@+id/bt_schedule"
+                    android:layout_width="125dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Get Schedule" />
+
+                <Button
+                    android:id="@+id/bt_view"
+                    android:layout_width="125dp"
+                    android:layout_height="50dp"
+                    android:text="View Data" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/bt_logOut"
+                    android:layout_width="125dp"
+                    android:layout_height="50dp"
+                    android:text="Log out" />
+
+                <Button
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/bt_lab"
+                    android:layout_width="125dp"
+                    android:layout_height="50dp"
+                    android:text="Lab Section" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ScheduleView"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/stv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Gravida ID: "
+                android:textSize="25dp"/>
+
+            <TextView
+                android:id="@+id/stv_fn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Gravida First Name: "
+                android:textSize="25dp"/>
+
+            <TextView
+                android:id="@+id/stv_ln"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Gravida Last Name: "
+                android:textSize="25dp"/>
+
+
+
+
+            <TextView
+                android:id="@+id/stv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="LMP-Date: "
+                android:textSize="25dp"/>
+
+            <TextView
+                android:id="@+id/stv_edd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="EDD-Date: "
+                android:textSize="25dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_red_light"
+                android:text="=================================================="
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Lab schedule"
+                android:textSize="25dp"/>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Blood type \nCBC\n
+RPR\n HIV\n Pap smear\n Carrier screen\n Rubella\n Urinalysis"
+                android:textSize="15dp"/>
+
+
+
+            <TextView
+                android:id="@+id/stv_fdss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Down syndrome screen: "
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/stv_sdss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Second Down syndrome screen: "
+                android:layout_marginBottom="5dp"/>
+
+
+
+            <TextView
+                android:id="@+id/stv_gbs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GBS: "
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_red_light"
+                android:text="=================================================="
+                />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Ultraound schedule"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:id="@+id/stv_ntt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nuchal translucency test: "
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/stv_au"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anatomy ultrasound: "
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_red_light"
+                android:text="=================================================="
+                />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="NTS"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:id="@+id/stv_nts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NTS(Weekly): "
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_red_light"
+                android:text="=================================================="
+                />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Routine visit"
+                android:textSize="25dp"/>
+
+
+            <TextView
+                android:id="@+id/stv_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OK to delivery: "
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_red_light"
+                android:text="=================================================="
+                />
+
+            <TextView
+                android:id="@+id/stv_hyper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not Hypertension"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textColor="@android:color/holo_red_light"
+                android:text="=================================================="
+                />
+
+           <LinearLayout
+               android:id="@+id/sll_diabetes"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:visibility="gone">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textSize="25dp"
+                   android:textColor="@android:color/black"
+                   android:text="Diabetes"/>
+
+
+               <TextView
+                   android:id="@+id/stv_diaCheck"
+                   android:layout_marginBottom="5dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+
+               <TextView
+                   android:id="@+id/stv_diaEC"
+                   android:layout_marginBottom="5dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+
+               <TextView
+                   android:id="@+id/stv_diaNV"
+                   android:layout_marginBottom="5dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+
+               <TextView
+                   android:id="@+id/stv_glucoseVisiting"
+                   android:layout_width="match_parent"
+                   android:layout_marginBottom="5dp"
+                   android:layout_height="wrap_content"
+                   android:visibility="gone"/>
+           </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textColor="@android:color/holo_red_light"
+                android:text="=================================================="
+                />
+
+            <LinearLayout
+                android:id="@+id/sll_addVisit"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="25dp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Additional Visiting: "/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textColor="@android:color/holo_red_light"
+                android:text="=================================================="
+                />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/sbt_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:text="Add visit"/>
+
+                <Button
+                    android:id="@+id/sbt_back"
+                    android:textSize="25dp"
+                    android:text="Input data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

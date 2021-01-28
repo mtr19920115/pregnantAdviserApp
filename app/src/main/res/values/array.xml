@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="date">
+      <item>LMP-Date</item>
+      <item>EDD-Date</item>
+      <item>US Date</item>
+
+  </string-array>
+
+    <string-array name="way">
+        <item>Vaginal </item>
+        <item>C-section</item>
+    </string-array>
+
+    <string-array name="diaType">
+        <item>Type I</item>
+        <item>Type II</item>
+    </string-array>
+
+    <string-array name="visitType">
+        <item>ultrasound</item>
+        <item>autopopulate</item>
+        <item>Routine visit</item>
+        <item>diabetes nurse visit</item>
+        <item>diabetes clinic visit</item>
+    </string-array>
+
+    <string-array name="GlucoseType">
+        <item>normal fasting Glucose</item>
+        <item>first hour postprandial glucose</item>
+        <item>second hour postprandial glucose</item>
+    </string-array>
+
+    <string-array name="labTitle">
+        <item>blood type</item>
+        <item>Hemoglobin</item>
+        <item>platelet</item>
+        <item>AST</item>
+        <item>ALT</item>
+        <item>creatinine</item>
+        <item>Urine Protein</item>
+        <item>first Trimester</item>
+        <item>down Syndrome Screen</item>
+        <item>second Trimester Down Syndrome Screen</item>
+        <item>NIPT</item>
+        <item>amniocentesis</item>
+        <item>sickle Cell Screen</item>
+        <item>cystic Fibrosis Screen</item>
+        <item>HIV</item>
+        <item>syphilis</item>
+        <item>hepatitisBC</item>
+        <item>gestational Diabetes Screen</item>
+        <item>GBS</item>
+    </string-array>
+
+</resources>

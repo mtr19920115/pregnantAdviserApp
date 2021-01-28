@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ming.pregnancyadviserapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.LabActivity"></activity>
+        <activity android:name=".Activity.UpdateHypertensionData" />
+        <activity android:name=".Activity.UpdateGlucoseActivity" />
+        <activity android:name=".Activity.SignUP" />
+        <activity android:name=".Activity.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.AddVisit" />
+        <activity android:name=".Activity.ScheduleView" />
+        <activity android:name=".Activity.ViewDataActivity" />
+        <activity android:name=".Activity.MainActivity" />
+    </application>
+
+</manifest>
